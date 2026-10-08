@@ -13,6 +13,9 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Remove="BrowserHost\**\*.cs" />
+    <EmbeddedResource Remove="BrowserHost\**" />
+    <None Remove="BrowserHost\**" />
     <None Update="assets\**">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>

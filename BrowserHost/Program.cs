@@ -41,7 +41,7 @@ internal static class Program
             WindowlessRenderingEnabled = true,
             MultiThreadedMessageLoop = false,
             CachePath = Path.Combine(dataDir, "cache"),
-            UserDataPath = Path.Combine(dataDir, "user-data"),
+            RootCachePath = dataDir,
         };
 
         try

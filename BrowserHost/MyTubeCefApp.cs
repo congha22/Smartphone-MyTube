@@ -6,6 +6,6 @@ internal sealed class MyTubeCefApp : CefApp
 {
     protected override void OnBeforeCommandLineProcessing(string processType, CefCommandLine commandLine)
     {
-        commandLine.AppendSwitchWithValue("autoplay-policy", "no-user-gesture-required");
+        commandLine.AppendSwitch("autoplay-policy", "no-user-gesture-required");
     }
 }
