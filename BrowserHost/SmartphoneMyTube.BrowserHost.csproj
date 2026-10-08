@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <AssemblyName>SmartphoneMyTube.BrowserHost</AssemblyName>
+    <RootNamespace>SmartphoneMyTube.BrowserHost</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup Condition="$([System.String]::Copy('$(RuntimeIdentifier)').Contains('arm64')) != 'true'">
+    <PackageReference Include="CefGlue.Common" Version="120.6099.215" />
+  </ItemGroup>
+
+  <ItemGroup Condition="$([System.String]::Copy('$(RuntimeIdentifier)').Contains('arm64')) == 'true'">
+    <PackageReference Include="CefGlue.Common.ARM64" Version="120.6099.215" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Include="..\Shared\BrowserHostProtocol.cs" Link="Shared\BrowserHostProtocol.cs" />
+  </ItemGroup>
+</Project>
