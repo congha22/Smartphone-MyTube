@@ -1,0 +1,14 @@
+{
+  "app.name": "MyTube",
+  "ui.paste": "Paste URL",
+  "ui.load": "Play",
+  "ui.pin": "Pin",
+  "ui.unpin": "Unpin",
+  "ui.back": "Back",
+  "ui.no_url": "Paste a YouTube URL first.",
+  "ui.invalid_url": "That doesn't look like a YouTube video URL.",
+  "ui.host_missing": "Browser host isn't installed yet. Build the BrowserHost project first.",
+  "ui.loading": "Loading video...",
+  "ui.ready": "Ready",
+  "ui.pinned": "Video pinned. Keep this player visible while playing."
+}

@@ -1,0 +1,15 @@
+{
+  "Name": "Smartphone MyTube",
+  "Author": "d5a1lamdtd",
+  "Version": "0.1.0",
+  "Description": "Adds a video player app to Smartphone. Paste a YouTube link and keep the video visible while playing Stardew Valley.",
+  "UniqueID": "d5a1lamdtd.Smartphone-MyTube",
+  "EntryDll": "Smartphone-MyTube.dll",
+  "MinimumApiVersion": "4.0.0",
+  "Dependencies": [
+    {
+      "UniqueID": "d5a1lamdtd.Smartphone",
+      "IsRequired": true
+    }
+  ]
+}
